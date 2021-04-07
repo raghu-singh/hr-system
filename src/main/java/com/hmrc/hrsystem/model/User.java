@@ -1,21 +1,25 @@
 package com.hmrc.hrsystem.model;
 
 
+import java.math.BigDecimal;
+
 public class User {
 
     private Long id;
     private String firstName;
     private String secondName;
     private int age;
+    private BigDecimal salary;
 
     public User() {
     }
 
-    public User(Long id, String firstName, String secondName, int age) {
+    public User(Long id, String firstName, String secondName, int age, BigDecimal salary) {
         this.id = id;
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
+        this.salary = salary;
     }
 
     public Long getId() {
@@ -50,6 +54,14 @@ public class User {
         this.age = age;
     }
 
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public void setSalary(BigDecimal salary) {
+        this.salary = salary;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -57,6 +69,7 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +
                 ", age=" + age +
+                ", salary=" + salary +
                 '}';
     }
 }
