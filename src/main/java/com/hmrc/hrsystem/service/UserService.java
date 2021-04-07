@@ -1,23 +1,37 @@
 package com.hmrc.hrsystem.service;
 
-import com.hmrc.hrsystem.dao.UserDAO;
+import com.hmrc.hrsystem.dao.UserRepository;
+import com.hmrc.hrsystem.exceptions.UserNotFoundException;
 import com.hmrc.hrsystem.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 @Service
 public class UserService {
-    public List<User> findAllUsers() {
-        return UserDAO.findAll();
+
+    private final UserRepository userRepository;
+
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
-    public Collection<User> findUser(Long id) {
-        List<User> users = UserDAO.findAll();
-        List<User> list = users.stream().filter(usr -> usr.getId() == id).collect(Collectors.toList());
-        if(list.isEmpty()) throw new RuntimeException("Invalid User.No user found for id:"+id);
-        return list;
+    public List<User> findAllUsers() {
+        Iterable<User> userIterable = userRepository.findAll();
+        List<User> userList = new ArrayList<>();
+        userIterable.forEach(user -> userList.add(user));
+        return userList;
+    }
+
+    public User findUser(final Long userId) throws UserNotFoundException {
+        Optional<User> optionalUser = userRepository.findById(userId);
+        if (optionalUser.isPresent()) {
+            return optionalUser.get();
+        }
+        throw new UserNotFoundException("User with Id " + userId + " not found");
     }
 }
