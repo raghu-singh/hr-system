@@ -1,5 +1,6 @@
 package com.hmrc.hrsystem.controller;
 
+import com.hmrc.hrsystem.exceptions.UserNotFoundException;
 import com.hmrc.hrsystem.model.User;
 import com.hmrc.hrsystem.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,13 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
 import java.util.List;
 
 @RestController
 public class UserController {
 
-    UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
@@ -26,17 +26,17 @@ public class UserController {
     @GetMapping("/users")
     public ResponseEntity<?> getAllUsers() {
         List<User> users = userService.findAllUsers();
-        return new ResponseEntity<List<User>>(users, HttpStatus.FOUND);
+        return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @GetMapping("/users/{id}")
-    public ResponseEntity<?> getUser(@PathVariable("id") Long id) {
-        Collection<User> collect = userService.findUser(id);
-        return new ResponseEntity<Collection<User>>(collect, HttpStatus.FOUND);
+    @GetMapping("/users/{userId}")
+    public ResponseEntity<?> getUserById(@PathVariable final Long userId) throws UserNotFoundException {
+        User user = userService.findUser(userId);
+        return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?> handleRuntimeException(RuntimeException e){
-        return new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }

@@ -1,21 +1,32 @@
 package com.hmrc.hrsystem.model;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.time.LocalDate;
+import java.util.Objects;
+
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstName;
-    private String secondName;
+    private String lastName;
     private int age;
+    private LocalDate dateOfBirth;
 
     public User() {
     }
 
-    public User(Long id, String firstName, String secondName, int age) {
-        this.id = id;
+    public User(String firstName, String lastName, int age, LocalDate dateOfBirth) {
         this.firstName = firstName;
-        this.secondName = secondName;
+        this.lastName = lastName;
         this.age = age;
+        this.dateOfBirth = dateOfBirth;
     }
 
     public Long getId() {
@@ -34,12 +45,12 @@ public class User {
         this.firstName = firstName;
     }
 
-    public String getSecondName() {
-        return secondName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAge() {
@@ -50,13 +61,38 @@ public class User {
         this.age = age;
     }
 
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age && Objects.equals(id, user.id)
+                && Objects.equals(firstName, user.firstName)
+                && Objects.equals(lastName, user.lastName)
+                && Objects.equals(dateOfBirth, user.dateOfBirth);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, age, dateOfBirth);
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
+                ", secondName='" + lastName + '\'' +
                 ", age=" + age +
+                ", dateOfBirth=" + dateOfBirth +
                 '}';
     }
 }
