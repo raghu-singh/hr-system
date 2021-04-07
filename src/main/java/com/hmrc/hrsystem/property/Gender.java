@@ -1,7 +1,7 @@
 package com.hmrc.hrsystem.property;
 
 public enum Gender {
-    M("Male"), F("Female"), T("Transgender");
+    Male("M"), Female("F"), Transgender("T");
     private String desc;
     Gender(String desc){ this.desc = desc;}
 }
