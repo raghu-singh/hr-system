@@ -38,12 +38,6 @@ public class UserController {
         return new ResponseEntity<User>(user1,HttpStatus.CREATED);
     }
 
-    @PutMapping("/users")
-    public ResponseEntity<?> updateUser(@RequestBody User user){
-        userService.save(user);
-        return new ResponseEntity<User>(user,HttpStatus.CREATED);
-    }
-
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?> handleRuntimeException(RuntimeException e){
         return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
