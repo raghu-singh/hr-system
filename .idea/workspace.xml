@@ -25,7 +25,8 @@
     <list default="true" id="f0519710-1e19-4908-ab37-70e650619976" name="Default Changelist" comment="Updated the salary for User:Raghu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectId" id="1qlA3keBMCNQe9NIQVdeEHtGs6k" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +61,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -125,22 +132,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1617729995581" />
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1617876582262">
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1617968433558">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617876582262" />
-    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1617876582260">
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617968433558" />
+    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1617968433558">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617876582260" />
-    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1617876582258">
+    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617968433558" />
+    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1617968433558">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617876582258" />
-    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1617876582260">
+    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617968433558" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1617968433558">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617876582260" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617968433558" />
     <state x="121" y="50" key="MergeDialog" timestamp="1617800791416">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -149,6 +156,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="280" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617800826319" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1617968147795">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1617968147795" />
     <state x="246" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617717040181">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
