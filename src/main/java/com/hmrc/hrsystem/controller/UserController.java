@@ -34,8 +34,8 @@ public class UserController {
 
     @PostMapping("/users")
     public ResponseEntity<?> saveUser(@RequestBody User user){
-        userService.save(user);
-        return new ResponseEntity<User>(user,HttpStatus.CREATED);
+        User user1 = userService.save(user);
+        return new ResponseEntity<User>(user1,HttpStatus.CREATED);
     }
 
     @ExceptionHandler(RuntimeException.class)

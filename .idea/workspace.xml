@@ -23,16 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0519710-1e19-4908-ab37-70e650619976" name="Default Changelist" comment="Updated the salary for User:Raghu">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/dao/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hmrc/hrsystem/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hmrc/hrsystem/HrSystemApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
