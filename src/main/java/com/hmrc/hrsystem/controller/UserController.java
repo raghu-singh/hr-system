@@ -33,9 +33,15 @@ public class UserController {
     }
 
     @PostMapping("/users")
-    public ResponseEntity<?> saveUser(@RequestBody User user){
-        User user1 = userService.save(user);
+    public ResponseEntity<?> saveUser(@RequestBody User user2){
+        User user1 = userService.save(user2);
         return new ResponseEntity<User>(user1,HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/users/{id}")
+    public  ResponseEntity<?> deleteUser(@PathVariable("id") Long id){
+        userService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @ExceptionHandler(RuntimeException.class)
