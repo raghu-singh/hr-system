@@ -38,6 +38,12 @@ public class UserController {
         return new ResponseEntity<User>(user1,HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/users/{Id}")
+    public  ResponseEntity<?> deleteUser(@PathVariable("Id") Long id){
+        userService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?> handleRuntimeException(RuntimeException e){
         return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);

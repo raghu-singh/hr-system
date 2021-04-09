@@ -39,4 +39,13 @@ public class UserService {
         if(user == null) throw new RuntimeException("Invalid data provided.");
         return userRepository.save(user);
     }
+
+    public void delete(Long id) {
+        Optional<User> user = userRepository.findById(id);
+        if(user.isPresent()){
+            userRepository.delete(user.get());
+        }
+        throw new RuntimeException("Invalid data: User not found.");
+    }
+
 }
