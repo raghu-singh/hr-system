@@ -22,17 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0519710-1e19-4908-ab37-70e650619976" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/HrSystemApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmrc/hrsystem/HrSystemApplicationTests.java" beforeDir="false" />
+    <list default="true" id="f0519710-1e19-4908-ab37-70e650619976" name="Default Changelist" comment="Updated the salary for User:Raghu">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmrc/hrsystem/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +104,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="267" y="19" key="#Inspections" timestamp="1617715352771">
@@ -131,22 +123,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1617729995581" />
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1617730224783">
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom" timestamp="1617876582262">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617730224783" />
-    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1617730224783">
+    <state width="1202" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617876582262" />
+    <state width="1202" height="147" key="GridCell.Tab.0.center" timestamp="1617876582260">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617730224783" />
-    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1617730224783">
+    <state width="1202" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617876582260" />
+    <state width="1202" height="147" key="GridCell.Tab.0.left" timestamp="1617876582258">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617730224783" />
-    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1617730224783">
+    <state width="1202" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617876582258" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right" timestamp="1617876582260">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617730224783" />
+    <state width="1202" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617876582260" />
+    <state x="121" y="50" key="MergeDialog" timestamp="1617800791416">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="50" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617800791416" />
+    <state x="280" y="101" key="MultipleFileMergeDialog" timestamp="1617800826319">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="280" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617800826319" />
     <state x="246" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1617717040181">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

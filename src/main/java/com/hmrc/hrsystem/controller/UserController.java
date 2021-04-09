@@ -6,10 +6,7 @@ import com.hmrc.hrsystem.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,6 +30,12 @@ public class UserController {
     public ResponseEntity<?> getUserById(@PathVariable final Long userId) throws UserNotFoundException {
         User user = userService.findUser(userId);
         return new ResponseEntity<>(user, HttpStatus.OK);
+    }
+
+    @PostMapping("/users")
+    public ResponseEntity<?> saveUser(@RequestBody User user){
+        User user1 = userService.save(user);
+        return new ResponseEntity<User>(user1,HttpStatus.CREATED);
     }
 
     @ExceptionHandler(RuntimeException.class)

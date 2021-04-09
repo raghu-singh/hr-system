@@ -34,4 +34,9 @@ public class UserService {
         }
         throw new UserNotFoundException("User with Id " + userId + " not found");
     }
+
+    public User save(User user) {
+        if(user == null) throw new RuntimeException("Invalid data provided.");
+        return userRepository.save(user);
+    }
 }
